@@ -1,7 +1,7 @@
 FROM node:12.16.1
 COPY yarn.lock package.json ./
 RUN yarn
-COPY pages pages
+COPY src src
 COPY public public
 RUN yarn build
 

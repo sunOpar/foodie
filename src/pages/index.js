@@ -1,5 +1,28 @@
 import Head from 'next/head'
+import Card from '../features/home/card'
 
+const cardData = [
+  {
+    href: '/snack',
+    title: '零食',
+    content: '各种类型的零食，总有一款适合你',
+  },
+  {
+    href: '/dish',
+    title: '菜肴',
+    content: '领略来自世界各地的特色菜肴，了解当地文化传统',
+  },
+  {
+    href: '/DIY',
+    title: '自制美食',
+    content: '看看这些美食玩家又创造了什么',
+  },
+  {
+    href: '/story',
+    title: '美食故事',
+    content: '传说每一个美食，背后都有一个鲜为人知的故事',
+  },
+]
 const Home = () => (
   <div className="container">
     <Head>
@@ -15,37 +38,13 @@ const Home = () => (
       <p>反正注定是失败的，快来一起享受美食吧！</p>
 
       <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>零食 &rarr;</h3>
-          <p>各种类型的零食，总有一款适合你</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>菜肴 &rarr;</h3>
-          <p>领略来自世界各地的特色菜肴，了解当地文化传统</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>自制美食 &rarr;</h3>
-          <p>看看这些美食玩家又创造了什么</p>
-        </a>
-
-        <a
-          href="https://zeit.co/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>美食故事 &rarr;</h3>
-          <p>
-          传说每一个美食，都有一个鲜为人知的故事
-          </p>
-        </a>
+        {cardData.map(item=>(
+          <Card key={item.title} {...item} />
+        ))}
       </div>
     </main>
 
-    <footer>Powered by oapr</footer>
+    <footer>Powered by 徐亚光</footer>
 
     <style jsx>{`
       .container {
@@ -83,11 +82,6 @@ const Home = () => (
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
       }
 
       .title a {
@@ -138,6 +132,7 @@ const Home = () => (
 
       .card {
         margin: 1rem;
+        height: 160px;
         flex-basis: 45%;
         padding: 1.5rem;
         text-align: left;
