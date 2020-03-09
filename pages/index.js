@@ -3,59 +3,49 @@ import Head from 'next/head'
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>什么值得吃</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+      <h1 className="title">欢迎来到什么值得吃</h1>
 
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
+      <p className="description">人生苦短，你，还在奋斗吗？</p>
+
+      <p>反正注定是失败的，快来一起享受美食吧！</p>
 
       <div className="grid">
         <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <h3>零食 &rarr;</h3>
+          <p>各种类型的零食，总有一款适合你</p>
         </a>
 
         <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <h3>菜肴 &rarr;</h3>
+          <p>领略来自世界各地的特色菜肴，了解当地文化传统</p>
         </a>
 
         <a
           href="https://github.com/zeit/next.js/tree/master/examples"
           className="card"
         >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <h3>自制美食 &rarr;</h3>
+          <p>看看这些美食玩家又创造了什么</p>
         </a>
 
         <a
           href="https://zeit.co/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           className="card"
         >
-          <h3>Deploy &rarr;</h3>
+          <h3>美食故事 &rarr;</h3>
           <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
+          传说每一个美食，都有一个鲜为人知的故事
           </p>
         </a>
       </div>
     </main>
 
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
+    <footer>Powered by oapr</footer>
 
     <style jsx>{`
       .container {
