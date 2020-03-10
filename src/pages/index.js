@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Card from '../features/home/card'
+import Card from '../features/home/Card'
 
 const cardData = [
   {
