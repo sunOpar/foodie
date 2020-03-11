@@ -35,3 +35,20 @@ jobs:
         echo VERSION=$VERSION
         docker tag image $DOCKER_REG:$VERSION
         docker push $DOCKER_REG:$VERSION
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    env:
+      CONTAINER_NAME: foodie-web
+    steps:
+    - name: deploy docker image
+      uses: appleboy/ssh-action@v0.0.7
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.HOST_USERNAME }}
+        password: ${{ secrets.HOST_PASSWORD }}
+        envs: CONTAINER_NAME, DOCKER_REG
+        script: |
+          if [ $(docker ps -a | grep -c $CONTAINER_NAME) -gt 0 ]; then docker stop $CONTAINER_NAME;docker rm $CONTAINER_NAME;fi
+          docker run --name $CONTAINER_NAME -d -p 4000:4000 $DOCKER_REG
+          
