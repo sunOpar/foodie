@@ -1,7 +1,7 @@
 name: Docker Image CI
 
 env:
-  DOCKER_REG: registry.cn-shanghai.aliyuncs.com/opar/foodie
+  DOCKER_REG: registry.cn-shanghai.aliyuncs.com/opar/foodie-web
   REG: registry.cn-shanghai.aliyuncs.com
 
 on:
