@@ -1,4 +1,5 @@
 FROM node:12.16.1
+WORKDIR /opt/app
 COPY yarn.lock package.json ./
 RUN yarn
 COPY src src
