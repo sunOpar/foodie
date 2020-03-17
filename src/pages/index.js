@@ -13,7 +13,7 @@ const cardData = [
     content: '领略来自世界各地的特色菜肴，了解当地文化传统',
   },
   {
-    href: '/DIY',
+    href: '/diy',
     title: '自制美食',
     content: '看看这些美食玩家又创造了什么',
   },
