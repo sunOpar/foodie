@@ -2,12 +2,12 @@ import React from 'react'
 import Link from '../../components/Link'
 import PropTypes from 'prop-types'
 
-function Card({ title, content, href }) {
+function Card({ title, desc, path }) {
   return (
     <div className="card">
-      <Link href={href}>
+      <Link href={path}>
         <h3>{title} &rarr;</h3>
-        <p>{content}</p>
+        <p>{desc}</p>
       </Link>
       <style jsx>{`
         .card {
