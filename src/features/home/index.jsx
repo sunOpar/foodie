@@ -1,14 +1,12 @@
 import Head from 'next/head'
 import Card from './Card'
 
-const HomeView = ({menu}) => {
+const HomeView = ({ menu }) => {
   return (
     <div className="container">
       <Head>
         <title>什么值得吃</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
         <h1 className="title">欢迎来到什么值得吃</h1>
 
