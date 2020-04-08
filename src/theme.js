@@ -6,4 +6,4 @@ export const theme = {
       height: '20px',
     },
   },
-};
+}
