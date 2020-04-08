@@ -1,19 +1,11 @@
-import Head from 'next/head'
 import Card from './Card'
+import Header from './Header'
 
 const HomeView = ({ menu }) => {
   return (
     <div className="container">
-      <Head>
-        <title>什么值得吃</title>
-      </Head>
+      <Header />
       <main>
-        <h1 className="title">欢迎来到什么值得吃</h1>
-
-        <p className="description">人生苦短，你，还在奋斗吗？</p>
-
-        <p>反正注定是失败的，快来一起享受美食吧！</p>
-
         <div className="grid">
           {menu.map((item) => (
             <Card key={item.title} {...item} />
@@ -26,7 +18,6 @@ const HomeView = ({ menu }) => {
       <style jsx>{`
         .container {
           min-height: 100vh;
-          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -34,7 +25,6 @@ const HomeView = ({ menu }) => {
         }
 
         main {
-          padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
