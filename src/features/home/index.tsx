@@ -9,7 +9,7 @@ const HomeView = ({ menu }: { menu: IMenu[] }) => {
     <div className="container">
       <Header />
       <HomeNav menu={menu} />
-      <Box height="70vh" />
+      <Box height="65vh" />
       <HomeFooter />
     </div>
   )
