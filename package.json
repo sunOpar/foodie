@@ -17,6 +17,9 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
-    "git-rev-sync": "^2.0.0"
+    "@types/node": "^13.11.0",
+    "@types/react": "^16.9.32",
+    "git-rev-sync": "^2.0.0",
+    "typescript": "^3.8.3"
   }
 }
