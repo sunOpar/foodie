@@ -1,14 +1,11 @@
 import Header from './Header'
-import HomeNav from './HomeNav'
-import { IMenu } from './types'
 import HomeFooter from './HomeFooter'
 import { Box } from 'grommet'
 
-const HomeView = ({ menu }: { menu: IMenu[] }) => {
+const HomeView = () => {
   return (
-    <div className="container">
+    <div>
       <Header />
-      <HomeNav menu={menu} />
       <Box height="65vh" />
       <HomeFooter />
     </div>
