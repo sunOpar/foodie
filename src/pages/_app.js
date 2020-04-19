@@ -1,14 +1,8 @@
 // import App from 'next/app'
-import { Grommet } from 'grommet'
 import '../globalStyle.css'
-import { theme } from '../theme'
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <Grommet theme={theme}>
-      <Component {...pageProps} />
-    </Grommet>
-  )
+  return <Component {...pageProps} />
 }
 
 // Only uncomment this method if you have blocking data requirements for

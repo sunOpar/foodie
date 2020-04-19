@@ -1,16 +1,20 @@
 import React from 'react'
-import { Box } from 'grommet'
+import styled from 'styled-components'
+
+const StyledHeader = styled.div`
+  display: flex;
+  align-items: center;
+  background: #333333;
+  color: #f8f8f8;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px;
+`
 
 export default function Header() {
   return (
-    <Box
-      pad="small"
-      fill="horizontal"
-      background="dark-1"
-      align="center"
-      as="header"
-    >
-      <Box as="h1">蛇皮笔记</Box>
-    </Box>
+    <StyledHeader>
+      <h1>蛇皮笔记</h1>
+    </StyledHeader>
   )
 }
