@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import Header from './Header'
-import HomeFooter from './HomeFooter'
 import MyEditor from './MyEditor'
 
 const EditorWrap = styled.div`
@@ -17,7 +16,6 @@ const HomeView = () => {
       <EditorWrap>
         <MyEditor />
       </EditorWrap>
-      <HomeFooter />
     </div>
   )
 }
