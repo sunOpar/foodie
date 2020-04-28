@@ -11,7 +11,7 @@ const EditorWrap = styled.div`
   font-size: 16px;
   line-height: 1.5;
   color: rgb(55, 53, 47);
-  padding: 0px 96px 30vh;
+  padding: 96px 96px 30vh;
   font-size: 16px;
   line-height: 1.4;
 `
